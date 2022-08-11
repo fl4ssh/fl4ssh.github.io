@@ -10,7 +10,6 @@ description = "Competitive programming - what, why and how?"
 showFullContent = false
 readingTime = false
 hideComments = false
-draft = true
 +++
 
 # What is a competitive programming?
