@@ -23,18 +23,18 @@ Given an integer n, return a string array answer (1-indexed) where:
 ```
 That is very simple and beginner level task that requires a knowledge of `if, else if, else` conditional statements.
 
-# Why should someone consider competitive programming?
-For the programming beginners it is a good start to learn a programming language. At the start, it could get very boring to cram theory of a language. It would be more effective to practice and apply obtained knowledge by solving some tasks.
+# Why should someone consideru participating in competitive programming?
+For the programming beginners it is a good start to learn a programming language. At the start, it could get very tedious to cram theory of a language. It would be more effective to practice and apply obtained knowledge by solving some tasks. Moreover, the beginners will discover basic data structures and algorithms that are essential for learning more complex subjects.
 
-For the people with some experience in coding, they will benefit from finding a solution that runs quicker and consumes less memory. Moreover, they can always compare their solution with others. That way they will also obtain code review skills that are essential for good programmers.
+Programmers with some experience in coding will learn finding more optimal solution rather than brute-force, which runs faster and consumes less memory. Also, it is important to compare different solution. In this way programmers obtain code review skills that are essential for growth.
 
-Another reason to start competitive programming is that it helps to prepare a developer for the technical interviews. FAANG (Facebook, Apple, Amazon, Netflix, Google) and other big tech companies expects their candidates to be good at solving the coding tasks. Althought solving a challenge is not the only criteria that they consider, but it is definitely part of the hiring decision.
+Another reason to do competitive programming is that it helps to prepare for the technical interviews. FAANG (Facebook, Apple, Amazon, Netflix, Google) and other big tech companies expect their candidates to be good at solving the coding tasks. Solving a challenge is not the only criteria that they consider, but it is definitely part of the hiring decision.
 
-Finally, it is just fun thing to do. You can find good friends and teammates by communicating, learning and sharing your ideas with others.
+Finally, it is just fun thing to do. Programmers form teams, partnership and friendship during competitions. It is a great opportunity to communicate, learn and share ideas with other people who share the same interests in finding a perfect solution.
 
 # How should someone start their journey?
-There are many different options to start, but my favourites are:
- - [Interviews school](https://interviews.school): top-1 website to start from the basics of data structures (DS) and algorithms. It is totally FREE!
- - [Algoexpert](https://algoexpert.io): platform that has different types of challenges grouped by topics. Each challenge has a solution and video with explanation. The prices vary from $39 to $81 dollars per year. I think that is a good investment that you can make.
- - [Codewars](https://codewars.com): another free-of-charge website to start. They took the approach of east martial arts. It makes the learning interesting.
- - [Leetcode](https://leetcode.com): the best platform that has the largest amount of coding tasks. There are learning materials, video solutions, community that shares their solutions / comments / ideas. And it is free.
+There are many different options, but my favourites are:
+ - [Interviews school](https://interviews.school): top-1 website to start from the basics of data structures and algorithms. The content are split very concisely to chapters, and each chapter has explanation of a topic, examples of code, and some tasks (with hints) for consolidation of covered materials. Finally, it is totally FREE!
+ - [Codewars](https://codewars.com): another free-of-charge website to start. They introduce the learning system similar to teaching methods of east martial arts. Participant is a new learner that enters tatami of training hall and needs to do exercizes (called Kata) and attend sparring (called Kumite) to earn the status of a brave warrior.
+ - [Algoexpert](https://algoexpert.io): platform that has different types of challenges grouped by topics. Each challenge has a solution and video with explanation. Furthermore, it has other topics essential for the programming interviews, such as System Design, Machine Learning, etc. The prices vary from $39 to $81 dollars per year. I think that is a good investment that you can make.
+ - [Leetcode](https://leetcode.com): the best platform that has very large number of coding challenges. There are learning materials, video solutions, community that shares their solutions / comments / ideas. Subscribers can also attend a weekly and biweekly competitions (also called contests) where they can earn leetcoins. This coins can be exchanged to some valuable prices, such as free monthly premium subscription, t-shirts, laptop sleeve and original Leetcode 'Big O' notebook. It has different subscription plan, but most of the content is available for free.
