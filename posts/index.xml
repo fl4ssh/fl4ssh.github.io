@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Engineering in the wild</title><link>https://fl4ssh.github.io/posts/</link><description>Recent content in Posts on Engineering in the wild</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 11 Aug 2022 11:24:44 +0600</lastBuildDate><atom:link href="https://fl4ssh.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Starting Competitive Programming</title><link>https://fl4ssh.github.io/posts/starting-competitive-programming/</link><pubDate>Thu, 11 Aug 2022 11:24:44 +0600</pubDate><guid>https://fl4ssh.github.io/posts/starting-competitive-programming/</guid><description>What is a competitive programming? Competitive programming is a digital sport where the goal is to solve different challenges (in math, logical, logistic, etc. domains) using a programming language in a restricted amount of computational time and space. People can participate competition alone or in a team. Example of a competitive programming challenge:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Engineering in the wild</title><link>https://fl4ssh.github.io/posts/</link><description>Recent content in Posts on Engineering in the wild</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 02 May 2023 10:37:34 +0600</lastBuildDate><atom:link href="https://fl4ssh.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Dependency Inversion Principle</title><link>https://fl4ssh.github.io/posts/dependency-inversion-principle/</link><pubDate>Tue, 02 May 2023 10:37:34 +0600</pubDate><guid>https://fl4ssh.github.io/posts/dependency-inversion-principle/</guid><description>Small overview of Dependency Inversion Principle Dependency Inversion Principle (or DIP) is one of SOLID principles and methodology to avoid highly coupled distribution and increase the re-usability of layer.
+It is different from Dependency Injection, which is used to provide dependency to an application class / layer. Whereas DIP is used to invert the responsibility of flow control in an application.
+Formal definitions of DIP:
+High-level modules should not depend on low-level modules.</description><content>&lt;h1 id="small-overview-of-dependency-inversion-principle">Small overview of Dependency Inversion Principle&lt;/h1>
+&lt;p>Dependency Inversion Principle (or DIP) is one of SOLID principles and methodology to avoid highly coupled distribution and increase the re-usability of layer.&lt;/p>
+&lt;p>It is different from Dependency Injection, which is used to provide dependency to an application class / layer. Whereas DIP is used to invert the responsibility of flow control in an application.&lt;/p>
+&lt;p>Formal definitions of DIP:&lt;/p>
+&lt;ul>
+&lt;li>High-level modules should not depend on low-level modules. Both should depend on abstractions.&lt;/li>
+&lt;li>Abstractions should not depend on details. Instead, details should depend on abstractions.&lt;/li>
+&lt;/ul>
+&lt;p>Implementing DIP makes your code more flexible, maintainable, and easier to test. It is achieved by decoupling the components of your application by implementing DIP.&lt;/p>
+&lt;p>Example of DIP:&lt;/p>
+&lt;pre tabindex="0">&lt;code>type Repository interface {
+GetData(id int) ([]byte, error)
+}
+type Service struct {
+repo Repository
+}
+func (s *Service) ProcessDataByID(id int) error {
+data, err := s.repo.GetData(id)
+if err != nil {
+return err
+}
+// process data
+return nil
+}
+&lt;/code>&lt;/pre>&lt;p>In this example, we see that the service that processes data by ID is not limited by specific repository implementation, e.g. SQL database, or NoSQL database. All it knows is that it should obtain a data or an error from database. And it is sufficient to work without any issues.&lt;/p>
+&lt;p>So DIP is implemented by an abstraction in the face of interfaces in Golang. Let&amp;rsquo;s consider the case that doesn&amp;rsquo;t follow DIP principle:&lt;/p>
+&lt;pre tabindex="0">&lt;code>type Repository struct {
+db *sql.Conn
+}
+func (r *Repository) GetData(id int) ([]data, error) {
+// do transaction or simple query to retrieve data
+rows, err := r.Query(&amp;#34;SELECT * FROM table&amp;#34;)
+if err != nil {
+return nil, error
+}
+// process rows to obtain data, etc...
+return data, nil
+}
+type Service struct {
+repo *Repository
+}
+func (s *Service) ProcessDataByID(id int) error {
+data, err := s.repo.GetData(id)
+if err != nil {
+return err
+}
+// process data
+return nil
+}
+&lt;/code>&lt;/pre>&lt;p>In this code example, we see that &lt;code>Service&lt;/code> struct directly depends on &lt;code>Repository&lt;/code>. To test this code, you will need specific implementation of &lt;code>Repository&lt;/code> structure and initialize a connection to a database. This creates unnecessary complexities.&lt;/p></content></item><item><title>Starting Competitive Programming</title><link>https://fl4ssh.github.io/posts/starting-competitive-programming/</link><pubDate>Thu, 11 Aug 2022 11:24:44 +0600</pubDate><guid>https://fl4ssh.github.io/posts/starting-competitive-programming/</guid><description>What is a competitive programming? Competitive programming is a digital sport where the goal is to solve different challenges (in math, logical, logistic, etc. domains) using a programming language in a restricted amount of computational time and space. People can participate competition alone or in a team. Example of a competitive programming challenge:
 Given an integer n, return a string array answer (1-indexed) where: - answer[i] == &amp;#34;FizzBuzz&amp;#34; if i is divisible by 3 and 5.</description><content>&lt;h1 id="what-is-a-competitive-programming">What is a competitive programming?&lt;/h1>
 &lt;p>Competitive programming is a digital sport where the goal is to solve different challenges (in math, logical, logistic, etc. domains) using a programming language in a restricted amount of computational time and space. People can participate competition alone or in a team. Example of a competitive programming challenge:&lt;/p>
 &lt;pre tabindex="0">&lt;code>Given an integer n, return a string array answer (1-indexed) where:
