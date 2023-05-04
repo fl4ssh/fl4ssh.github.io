@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Engineering in the wild</title><link>https://fl4ssh.github.io/</link><description>Recent content on Engineering in the wild</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 02 May 2023 10:37:34 +0600</lastBuildDate><atom:link href="https://fl4ssh.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Dependency Inversion Principle</title><link>https://fl4ssh.github.io/posts/dependency-inversion-principle/</link><pubDate>Tue, 02 May 2023 10:37:34 +0600</pubDate><guid>https://fl4ssh.github.io/posts/dependency-inversion-principle/</guid><description>Small overview of Dependency Inversion Principle Dependency Inversion Principle (or DIP) is one of SOLID principles and methodology to avoid highly coupled distribution and increase the re-usability of layer.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Engineering in the wild</title><link>https://fl4ssh.github.io/</link><description>Recent content on Engineering in the wild</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 02 May 2023 15:00:08 +0600</lastBuildDate><atom:link href="https://fl4ssh.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Domain Modeling</title><link>https://fl4ssh.github.io/posts/domain-modeling/</link><pubDate>Tue, 02 May 2023 15:00:08 +0600</pubDate><guid>https://fl4ssh.github.io/posts/domain-modeling/</guid><description>Domain modeling Domain model is another term to describe business logic layer. It is a central layer of a three-layered architecture (Presentation -&amp;gt; Business -&amp;gt; Database). It is the part of the code that is likely to change and delivers the most value to the business. It is important to make it understandable and easy to modify.
+The domain is a fancy way of saying the problem you&amp;rsquo;re trying to solve.</description><content>&lt;h1 id="domain-modeling">Domain modeling&lt;/h1>
+&lt;p>Domain model is another term to describe business logic layer. It is a central layer of a three-layered architecture (Presentation -&amp;gt; Business -&amp;gt; Database). It is the part of the code that is likely to change and delivers the most value to the business. It is important to make it understandable and easy to modify.&lt;/p>
+&lt;p>The &lt;em>domain&lt;/em> is a fancy way of saying the problem you&amp;rsquo;re trying to solve.
+A &lt;em>model&lt;/em> is a map of a process or phenomenon that captures a useful property.
+Steps to develop domain model:&lt;/p>
+&lt;ul>
+&lt;li>initial conversation with business experts&lt;/li>
+&lt;li>agree on glossary&lt;/li>
+&lt;li>set some rules for the first minimal version of the domain model&lt;/li>
+&lt;li>wherever possible, concrete examples should be given for a rule&lt;/li>
+&lt;/ul>
+&lt;p>To model a domain, two concepts can be used:&lt;/p>
+&lt;ul>
+&lt;li>value object&lt;/li>
+&lt;li>entity.&lt;/li>
+&lt;/ul>
+&lt;p>Value objects are used to represent concepts or values within the domain, while entities are used to represent objects with unique identities that are relevant to the domain. By using these constructs effectively, we can create models that accurately reflect the business rules and concepts of the domain.&lt;/p>
+&lt;p>Example of a value object is &lt;code>EmailAddress&lt;/code>. It&amp;rsquo;s immutable and its identity is represented by its state. Example of an entity is &lt;code>User&lt;/code> which can have attributes (or value objects) such as name, email address, password, etc. Its state may change over time, but its identity remains the same (e.g. ID).&lt;/p></content></item><item><title>Dependency Inversion Principle</title><link>https://fl4ssh.github.io/posts/dependency-inversion-principle/</link><pubDate>Tue, 02 May 2023 10:37:34 +0600</pubDate><guid>https://fl4ssh.github.io/posts/dependency-inversion-principle/</guid><description>Small overview of Dependency Inversion Principle Dependency Inversion Principle (or DIP) is one of SOLID principles and methodology to avoid highly coupled distribution and increase the re-usability of layer.
 It is different from Dependency Injection, which is used to provide dependency to an application class / layer. Whereas DIP is used to invert the responsibility of flow control in an application.
 Formal definitions of DIP:
 High-level modules should not depend on low-level modules.</description><content>&lt;h1 id="small-overview-of-dependency-inversion-principle">Small overview of Dependency Inversion Principle&lt;/h1>
