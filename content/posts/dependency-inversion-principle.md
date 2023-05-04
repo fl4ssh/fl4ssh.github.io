@@ -6,13 +6,13 @@ authorTwitter = "" #do not include @
 cover = ""
 tags = ["", ""]
 keywords = ["", ""]
-description = ""
+description = "Small overview of Dependency Inversion Principle"
 showFullContent = false
 readingTime = false
 hideComments = false
 +++
 
-# Small overview of Dependency Inversion Principle
+# Dependency Inversion Principle
 
 Dependency Inversion Principle (or DIP) is one of SOLID principles and methodology to avoid highly coupled distribution and increase the re-usability of layer. 
 
