@@ -10,6 +10,7 @@ description = "This post is based on a recap of Cosmic Python book"
 showFullContent = false
 readingTime = false
 hideComments = false
+draft = true
 +++
 
 # Domain modeling
