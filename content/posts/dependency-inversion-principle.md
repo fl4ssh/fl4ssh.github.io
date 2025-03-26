@@ -10,6 +10,7 @@ description = "Small overview of Dependency Inversion Principle"
 showFullContent = false
 readingTime = false
 hideComments = false
+draft = true
 +++
 
 # Dependency Inversion Principle
